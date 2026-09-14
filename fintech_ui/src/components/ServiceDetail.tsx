@@ -22,7 +22,7 @@ export default function ServiceDetail({
       <div className="w-full lg:w-1/2 space-y-8">
         <div>
           <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
-          <p className="text-xl text-cyan-400 font-light">{description}</p>
+          <p className="text-xl text-indigo-400 font-light">{description}</p>
         </div>
         
         <div className="space-y-4">
@@ -49,24 +49,24 @@ export default function ServiceDetail({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-              <CheckCircle2 size={18} className="text-cyan-500" /> Key Features
+              <CheckCircle2 size={18} className="text-indigo-500" /> Key Features
             </h4>
             <ul className="space-y-2">
               {features.map((item, i) => (
                 <li key={i} className="text-sm text-gray-400 flex items-start gap-2">
-                  <span className="text-cyan-500/50 mt-1">•</span> {item}
+                  <span className="text-indigo-500/50 mt-1">•</span> {item}
                 </li>
               ))}
             </ul>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-              <CheckCircle2 size={18} className="text-cyan-500" /> Benefits
+              <CheckCircle2 size={18} className="text-indigo-500" /> Benefits
             </h4>
             <ul className="space-y-2">
               {benefits.map((item, i) => (
                 <li key={i} className="text-sm text-gray-400 flex items-start gap-2">
-                  <span className="text-cyan-500/50 mt-1">•</span> {item}
+                  <span className="text-indigo-500/50 mt-1">•</span> {item}
                 </li>
               ))}
             </ul>
@@ -89,7 +89,7 @@ export default function ServiceDetail({
           <div className="flex flex-wrap gap-2">
             {process.map((item, i) => (
               <div key={i} className="flex items-center gap-2">
-                <span className="text-xs text-cyan-500 font-bold">{i + 1}.</span>
+                <span className="text-xs text-indigo-500 font-bold">{i + 1}.</span>
                 <span className="text-sm text-gray-400">{item}</span>
                 {i < process.length - 1 && <span className="text-gray-600 mx-1">→</span>}
               </div>

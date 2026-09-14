@@ -19,7 +19,7 @@ export default function SEO({
       {/* Standard metadata tags */}
       <title>{fullTitle}</title>
       <meta name='description' content={description} />
-      
+      <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : ''} />
       {/* End standard metadata tags */}
       {/* Facebook tags */}
       <meta property="og:type" content={type} />

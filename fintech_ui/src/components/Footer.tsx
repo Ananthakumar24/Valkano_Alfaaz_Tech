@@ -17,9 +17,9 @@ export default function Footer() {
             Empowering businesses with next-gen technology solutions. We engineer your digital success.
           </p>
           <div className="flex gap-4 text-gray-500">
-            <a href="#" className="hover:text-cyan-500 transition-colors"><Twitter size={20} /></a>
-            <a href="#" className="hover:text-cyan-500 transition-colors"><Linkedin size={20} /></a>
-            <a href="#" className="hover:text-cyan-500 transition-colors"><Github size={20} /></a>
+            <a href="#" className="hover:text-indigo-500 transition-colors"><Twitter size={20} /></a>
+            <a href="#" className="hover:text-indigo-500 transition-colors"><Linkedin size={20} /></a>
+            <a href="#" className="hover:text-indigo-500 transition-colors"><Github size={20} /></a>
           </div>
         </div>
 

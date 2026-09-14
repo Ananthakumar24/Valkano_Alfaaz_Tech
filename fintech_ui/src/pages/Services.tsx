@@ -72,7 +72,7 @@ export default function Services() {
         <h2 className="text-3xl font-bold text-white mb-6">Need a custom solution?</h2>
         <button 
           onClick={onOpenModal}
-          className="px-10 py-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full font-medium transition-colors shadow-[0_0_20px_rgba(6,182,212,0.4)]"
+          className="px-10 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-medium transition-colors shadow-[0_0_20px_rgba(99,102,241,0.4)]"
         >
           Discuss Your Project
         </button>

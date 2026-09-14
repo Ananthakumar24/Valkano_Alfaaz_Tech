@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
           <p>
             If you have any questions about this privacy policy or our privacy practices, please contact us at:
             <br />
-            Email: <a href="mailto:privacy@valkanoalfaaz.com" className="text-cyan-400 hover:underline">privacy@valkanoalfaaz.com</a>
+            Email: <a href="mailto:privacy@valkanoalfaaz.com" className="text-indigo-400 hover:underline">privacy@valkanoalfaaz.com</a>
           </p>
         </section>
       </div>

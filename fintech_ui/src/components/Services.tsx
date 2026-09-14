@@ -1,5 +1,5 @@
 import { Code2, ArrowUpRight } from 'lucide-react';
-import { motion } from 'motion/react';
+import { motion, Variants } from 'motion/react';
 
 const services = [
   {
@@ -35,7 +35,7 @@ const services = [
 ];
 
 export default function Services() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -45,7 +45,7 @@ export default function Services() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
@@ -60,7 +60,7 @@ export default function Services() {
         className="text-center mb-20 max-w-2xl"
       >
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
-          Innovating Tomorrow. <span className="text-cyan-500">Building Today.</span>
+          Innovating Tomorrow. <span className="text-indigo-500">Building Today.</span>
         </h2>
         <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-light">
           Empowering businesses with next-gen technology solutions from custom software to AI-driven platforms, we engineer your digital success.
@@ -81,20 +81,20 @@ export default function Services() {
             key={index} 
             className={`group relative p-8 rounded-[24px] flex flex-col items-start transition-colors duration-300 ${
               service.isActive 
-                ? 'bg-cyan-600/10 text-white shadow-[0_0_40px_rgba(6,182,212,0.15)] border border-cyan-500/30 backdrop-blur-sm' 
+                ? 'bg-indigo-600/10 text-white shadow-[0_0_40px_rgba(99,102,241,0.15)] border border-indigo-500/30 backdrop-blur-sm' 
                 : 'bg-white/[0.02] border border-white/5 hover:border-white/10 hover:bg-white/[0.04] text-white backdrop-blur-sm'
             }`}
           >
             <div className="absolute top-6 right-6 overflow-hidden">
-              <ArrowUpRight size={20} className={`transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300 ${service.isActive ? 'text-cyan-400' : 'text-gray-500 group-hover:text-white'}`} strokeWidth={1.5} />
+              <ArrowUpRight size={20} className={`transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300 ${service.isActive ? 'text-indigo-400' : 'text-gray-500 group-hover:text-white'}`} strokeWidth={1.5} />
             </div>
             
-            <div className={`p-3 rounded-xl mb-8 transition-colors duration-300 ${service.isActive ? 'bg-cyan-500/20' : 'bg-white/5 group-hover:bg-white/10'}`}>
-              <Code2 size={24} className={service.isActive ? 'text-cyan-400' : 'text-gray-400 group-hover:text-white'} strokeWidth={1.5} />
+            <div className={`p-3 rounded-xl mb-8 transition-colors duration-300 ${service.isActive ? 'bg-indigo-500/20' : 'bg-white/5 group-hover:bg-white/10'}`}>
+              <Code2 size={24} className={service.isActive ? 'text-indigo-400' : 'text-gray-400 group-hover:text-white'} strokeWidth={1.5} />
             </div>
             
             <h3 className="text-xl font-bold mb-3 whitespace-pre-line leading-tight tracking-tight">{service.title}</h3>
-            <p className={`text-base leading-relaxed font-light ${service.isActive ? 'text-cyan-200' : 'text-gray-400'}`}>
+            <p className={`text-base leading-relaxed font-light ${service.isActive ? 'text-indigo-200' : 'text-gray-400'}`}>
               {service.description}
             </p>
           </motion.div>

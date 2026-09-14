@@ -6,10 +6,10 @@ import SEO from '../components/SEO';
 type ContextType = { onOpenModal: () => void };
 
 const values = [
-  { icon: <Target className="text-cyan-400" size={24} />, title: "Precision", description: "We measure twice and cut once. Every line of code is intentional." },
-  { icon: <Zap className="text-cyan-400" size={24} />, title: "Velocity", description: "Speed without sacrificing quality through automated workflows." },
-  { icon: <Users className="text-cyan-400" size={24} />, title: "Partnership", description: "We don't just build for you, we build with you as your technical arm." },
-  { icon: <Shield className="text-cyan-400" size={24} />, title: "Integrity", description: "Security and transparency are baked into our foundation." }
+  { icon: <Target className="text-indigo-400" size={24} />, title: "Precision", description: "We measure twice and cut once. Every line of code is intentional." },
+  { icon: <Zap className="text-indigo-400" size={24} />, title: "Velocity", description: "Speed without sacrificing quality through automated workflows." },
+  { icon: <Users className="text-indigo-400" size={24} />, title: "Partnership", description: "We don't just build for you, we build with you as your technical arm." },
+  { icon: <Shield className="text-indigo-400" size={24} />, title: "Integrity", description: "Security and transparency are baked into our foundation." }
 ];
 
 const team = [
@@ -60,8 +60,8 @@ export default function About() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, idx) => (
-            <div key={idx} className="p-8 rounded-[24px] bg-[#0a0a0a] border border-white/5 hover:border-cyan-500/30 transition-colors">
-              <div className="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-6">
+            <div key={idx} className="p-8 rounded-[24px] bg-[#0a0a0a] border border-white/5 hover:border-indigo-500/30 transition-colors">
+              <div className="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-6">
                 {value.icon}
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
@@ -83,7 +83,7 @@ export default function About() {
                 <img src={member.image} alt={member.name} className="w-full h-full object-cover" loading="lazy" />
               </div>
               <h3 className="text-lg font-bold text-white">{member.name}</h3>
-              <p className="text-cyan-400 text-sm">{member.role}</p>
+              <p className="text-indigo-400 text-sm">{member.role}</p>
             </div>
           ))}
         </div>
@@ -94,7 +94,7 @@ export default function About() {
         <p className="text-gray-400 mb-8 max-w-2xl mx-auto">Let's talk about how we can help you achieve your goals and transform your ideas into reality.</p>
         <button 
           onClick={onOpenModal}
-          className="px-10 py-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full font-medium transition-colors shadow-[0_0_20px_rgba(6,182,212,0.4)]"
+          className="px-10 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-medium transition-colors shadow-[0_0_20px_rgba(99,102,241,0.4)]"
         >
           Get in Touch
         </button>

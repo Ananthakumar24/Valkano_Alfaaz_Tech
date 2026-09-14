@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion, Variants } from 'motion/react';
 import { Star } from 'lucide-react';
 
 const testimonials = [
@@ -10,7 +10,7 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -20,14 +20,14 @@ export default function Testimonials() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
 
   return (
     <section className="py-32 px-6 w-full flex flex-col items-center overflow-hidden relative">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[50vh] bg-cyan-600/10 blur-[150px] -z-10 rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[50vh] bg-indigo-600/10 blur-[150px] -z-10 rounded-full pointer-events-none"></div>
 
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function Testimonials() {
         className="text-center mb-24"
       >
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Trusted by <span className="text-cyan-500">Innovators</span>
+          Trusted by <span className="text-indigo-500">Innovators</span>
         </h2>
         <p className="text-gray-400 text-lg font-light">Don't just take our word for it.</p>
       </motion.div>
@@ -64,7 +64,7 @@ export default function Testimonials() {
                 loading="lazy"
               />
             </div>
-            <div className="bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-cyan-500/50 hover:bg-white/[0.05] transition-colors rounded-[24px] p-8 pt-14 h-full flex flex-col items-center text-center shadow-xl">
+            <div className="bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-indigo-500/50 hover:bg-white/[0.05] transition-colors rounded-[24px] p-8 pt-14 h-full flex flex-col items-center text-center shadow-xl">
                <div className="flex text-yellow-400 mb-6 gap-1">
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} size={16} fill="currentColor" strokeWidth={0} />
@@ -73,7 +73,7 @@ export default function Testimonials() {
                <p className="text-gray-300 font-light leading-relaxed mb-8 flex-grow">"{testimonial.text}"</p>
                <div>
                  <h4 className="font-bold text-white tracking-tight">{testimonial.name}</h4>
-                 <p className="text-xs text-cyan-400 mt-1 uppercase tracking-wider">{testimonial.role}</p>
+                 <p className="text-xs text-indigo-400 mt-1 uppercase tracking-wider">{testimonial.role}</p>
                </div>
             </div>
           </motion.div>

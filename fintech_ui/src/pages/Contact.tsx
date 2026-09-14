@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, MapPin, Phone, CheckCircle2 } from 'lucide-react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import SEO from '../components/SEO';
 
 export default function Contact() {
@@ -37,18 +37,18 @@ export default function Contact() {
         {/* Contact Info */}
         <div className="flex flex-col gap-8">
           <div className="p-8 rounded-[24px] bg-white/[0.02] border border-white/10 backdrop-blur-md flex items-start gap-6">
-            <div className="p-4 bg-cyan-500/10 rounded-full text-cyan-400">
+            <div className="p-4 bg-indigo-500/10 rounded-full text-indigo-400">
               <Mail size={24} />
             </div>
             <div>
               <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
-              <p className="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">hello@valkanoalfaaz.com</p>
-              <p className="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">support@valkanoalfaaz.com</p>
+              <p className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">hello@valkanoalfaaz.com</p>
+              <p className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">support@valkanoalfaaz.com</p>
             </div>
           </div>
 
           <div className="p-8 rounded-[24px] bg-white/[0.02] border border-white/10 backdrop-blur-md flex items-start gap-6">
-            <div className="p-4 bg-cyan-500/10 rounded-full text-cyan-400">
+            <div className="p-4 bg-indigo-500/10 rounded-full text-indigo-400">
               <Phone size={24} />
             </div>
             <div>
@@ -59,7 +59,7 @@ export default function Contact() {
           </div>
 
           <div className="p-8 rounded-[24px] bg-white/[0.02] border border-white/10 backdrop-blur-md flex items-start gap-6">
-            <div className="p-4 bg-cyan-500/10 rounded-full text-cyan-400">
+            <div className="p-4 bg-indigo-500/10 rounded-full text-indigo-400">
               <MapPin size={24} />
             </div>
             <div>
@@ -72,7 +72,7 @@ export default function Contact() {
 
         {/* Contact Form */}
         <div className="p-10 rounded-[24px] bg-[#0a0a0a] border border-white/10 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 blur-[100px] rounded-full pointer-events-none"></div>
           
           <h2 className="text-2xl font-bold text-white mb-6 relative z-10">Send a Message</h2>
           
@@ -97,28 +97,28 @@ export default function Contact() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">First Name</label>
-                  <input required type="text" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="John" />
+                  <input required type="text" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="John" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
-                  <input required type="text" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Doe" />
+                  <input required type="text" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Doe" />
                 </div>
               </div>
               
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
-                <input required type="email" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="john@example.com" />
+                <input required type="email" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="john@example.com" />
               </div>
               
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                <textarea required rows={5} className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="How can we help you?"></textarea>
+                <textarea required rows={5} className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="How can we help you?"></textarea>
               </div>
               
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-cyan-600 hover:bg-cyan-500 disabled:opacity-70 disabled:cursor-not-allowed text-white rounded-lg px-4 py-4 font-medium transition-colors shadow-[0_0_15px_rgba(6,182,212,0.3)] flex justify-center items-center gap-2"
+                className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-70 disabled:cursor-not-allowed text-white rounded-lg px-4 py-4 font-medium transition-colors shadow-[0_0_15px_rgba(99,102,241,0.3)] flex justify-center items-center gap-2"
               >
                 {isSubmitting ? (
                   <>

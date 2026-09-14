@@ -37,7 +37,7 @@ export default function Careers() {
             </div>
             <button 
               onClick={onOpenModal}
-              className="px-6 py-2 border border-cyan-600 text-cyan-400 hover:bg-cyan-600/10 rounded-full text-sm font-medium transition-colors"
+              className="px-6 py-2 border border-indigo-600 text-indigo-400 hover:bg-indigo-600/10 rounded-full text-sm font-medium transition-colors"
             >
               Apply Now
             </button>

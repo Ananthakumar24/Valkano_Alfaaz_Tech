@@ -48,7 +48,7 @@ export default function FAQ() {
                 className="w-full px-6 py-6 flex items-center justify-between text-left focus:outline-none"
               >
                 <span className="text-lg font-medium text-white">{faq.question}</span>
-                <ChevronDown className={`text-cyan-500 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`text-indigo-500 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
               </button>
               
               <AnimatePresence>

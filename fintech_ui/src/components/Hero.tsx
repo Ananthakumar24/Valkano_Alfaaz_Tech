@@ -1,8 +1,8 @@
 import { Star } from 'lucide-react';
-import { motion } from 'motion/react';
+import { motion, Variants } from 'motion/react';
 
 export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -13,7 +13,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
   };
@@ -21,7 +21,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[90vh] pt-32 pb-16 px-4 text-center w-full z-10 overflow-hidden">
       {/* Background Glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] max-w-[1200px] h-[40vw] max-h-[600px] bg-cyan-600/30 blur-[120px] rounded-full pointer-events-none -z-10 mt-[-5%]"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] max-w-[1200px] h-[40vw] max-h-[600px] bg-indigo-600/30 blur-[120px] rounded-full pointer-events-none -z-10 mt-[-5%]"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60vw] max-w-[900px] h-[30vw] max-h-[400px] bg-white/20 blur-[100px] rounded-full pointer-events-none -z-10 mt-[2%]"></div>
 
       <motion.div 
@@ -30,7 +30,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
         initial="hidden"
         animate="visible"
       >
-        <motion.div variants={itemVariants} className="inline-block mb-8 px-5 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-semibold tracking-widest uppercase shadow-[0_0_15px_rgba(6,182,212,0.2)]">
+        <motion.div variants={itemVariants} className="inline-block mb-8 px-5 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-semibold tracking-widest uppercase shadow-[0_0_15px_rgba(99,102,241,0.2)]">
           Welcome to Valkano Alfaaz Technologies
         </motion.div>
         <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.1]">
@@ -43,7 +43,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
           <button 
             onClick={onOpenModal}
-            className="px-8 py-3.5 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full font-medium transition-colors w-full sm:w-auto shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]"
+            className="px-8 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-medium transition-colors w-full sm:w-auto shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:shadow-[0_0_30px_rgba(99,102,241,0.6)]"
           >
             Get a Free Consultation
           </button>

@@ -25,7 +25,7 @@ export default function Navbar({ onOpenModal }: { onOpenModal?: () => void }) {
       <div className="flex items-center justify-between w-full">
         <Link to="/" className="flex items-center gap-3">
           <img src="/logo.png" alt="Valkano Alfaaz Technologies" className="h-10 w-auto object-contain" />
-          <span className="hidden sm:block text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400 leading-none">
+          <span className="hidden sm:block text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-indigo-400 leading-none">
             Valkano Alfaaz
           </span>
         </Link>
@@ -40,7 +40,7 @@ export default function Navbar({ onOpenModal }: { onOpenModal?: () => void }) {
                 className={`relative hover:text-white transition-colors group ${isActive ? 'text-white' : ''}`}
               >
                 {item.name}
-                <span className={`absolute -bottom-1 left-0 h-[2px] bg-cyan-500 transition-all ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                <span className={`absolute -bottom-1 left-0 h-[2px] bg-indigo-500 transition-all ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
               </Link>
             );
           })}
@@ -55,7 +55,7 @@ export default function Navbar({ onOpenModal }: { onOpenModal?: () => void }) {
           </button>
           <button 
             onClick={onOpenModal}
-            className="px-5 py-2.5 text-sm bg-cyan-600 hover:bg-cyan-500 text-white rounded-full transition-colors font-medium shadow-[0_0_15px_rgba(6,182,212,0.3)]"
+            className="px-5 py-2.5 text-sm bg-indigo-600 hover:bg-indigo-500 text-white rounded-full transition-colors font-medium shadow-[0_0_15px_rgba(99,102,241,0.3)]"
           >
             Get Started
           </button>
@@ -85,7 +85,7 @@ export default function Navbar({ onOpenModal }: { onOpenModal?: () => void }) {
                   key={item.name} 
                   to={item.href} 
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-lg font-medium transition-colors ${isActive ? 'text-cyan-400' : 'text-gray-300 hover:text-white'}`}
+                  className={`text-lg font-medium transition-colors ${isActive ? 'text-indigo-400' : 'text-gray-300 hover:text-white'}`}
                 >
                   {item.name}
                 </Link>
@@ -95,7 +95,7 @@ export default function Navbar({ onOpenModal }: { onOpenModal?: () => void }) {
               <button onClick={() => { onOpenModal?.(); setIsMobileMenuOpen(false); }} className="w-full px-5 py-3 border border-gray-600/50 text-white rounded-full hover:bg-white/5">
                 Request A Demo
               </button>
-              <button onClick={() => { onOpenModal?.(); setIsMobileMenuOpen(false); }} className="w-full px-5 py-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full font-medium">
+              <button onClick={() => { onOpenModal?.(); setIsMobileMenuOpen(false); }} className="w-full px-5 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-medium">
                 Get Started
               </button>
             </div>

@@ -56,7 +56,7 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
                   <input
                     type="text"
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-indigo-500 transition-colors"
                     placeholder="John Doe"
                   />
                 </div>
@@ -65,7 +65,7 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
                   <input
                     type="email"
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-indigo-500 transition-colors"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -74,14 +74,14 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
                   <input
                     type="text"
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-indigo-500 transition-colors"
                     placeholder="Acme Corp"
                   />
                 </div>
                 
                 <button
                   type="submit"
-                  className="w-full bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg px-4 py-3 font-medium transition-colors mt-6 shadow-[0_0_15px_rgba(6,182,212,0.3)]"
+                  className="w-full bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg px-4 py-3 font-medium transition-colors mt-6 shadow-[0_0_15px_rgba(99,102,241,0.3)]"
                 >
                   Submit Request
                 </button>
