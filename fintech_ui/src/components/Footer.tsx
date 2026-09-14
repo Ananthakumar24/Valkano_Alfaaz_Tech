@@ -8,7 +8,7 @@ export default function Footer() {
         
         <div className="md:col-span-1">
           <div className="flex items-center gap-3 mb-6">
-            <img src="/logo.png" alt="Valkano Alfaaz Technologies" className="h-10 w-auto object-contain" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Valkano Alfaaz Technologies" className="h-10 w-auto object-contain" />
             <span className="text-xl font-bold tracking-tight text-white leading-none">
               Valkano Alfaaz
             </span>

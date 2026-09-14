@@ -24,7 +24,7 @@ export default function Navbar({ onOpenModal }: { onOpenModal?: () => void }) {
     >
       <div className="flex items-center justify-between w-full">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Valkano Alfaaz Technologies" className="h-10 w-auto object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Valkano Alfaaz Technologies" className="h-10 w-auto object-contain" />
           <span className="hidden sm:block text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-indigo-400 leading-none">
             Valkano Alfaaz
           </span>

@@ -66,7 +66,7 @@ function aistudioMediaPlugin(): Plugin {
 
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'production' ? '/Valkano_Alfaaz_Tech/' : '/',
+    base: mode === 'production' ? './' : '/',
     plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
     resolve: {
       alias: {
