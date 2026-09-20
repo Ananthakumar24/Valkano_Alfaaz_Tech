@@ -57,8 +57,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
         <p>&copy; {new Date().getFullYear()} Valkano Alfaaz Technologies. All rights reserved.</p>
         <div className="flex gap-6">
-          <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-          <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+          <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
         </div>
       </div>
     </footer>
